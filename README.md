@@ -7,6 +7,8 @@
 ```
 npm install
 ```
+## Project start
+```
 npm run serve
 ```
 
