@@ -1,0 +1,176 @@
+<template>
+ <div class="container">
+    <header class="display"> 0 </header>
+    
+    <button class="op op-ac"> AC </button>
+    <button class="op op-neg"> +/- </button>
+    <button class="op op-percent"> % </button>
+    <button class="op op-main op-divide"> ÷ </button>
+    <button class="num-7">7</button>
+    <button class="num-8">8</button>
+    <button class="num-9">9</button>
+    <button class="op op-main op-multi">×</button>
+    <button class="num-4">4</button>
+    <button class="num-5">5</button>
+    <button class="num-6">6</button>
+    <button class="op op-main op-minus">−</button>
+    <button class="num-1">1</button>
+    <button class="num-2">2</button>
+    <button class="num-3">3</button>
+    <button class="op op-main op-plus">+</button>
+    <button class="num-0">0</button>
+    <button class="num-dot">.</button>
+    <button class="op op-main op-eql">=</button>
+</div>
+</template>
+
+<script>
+export default {
+  data() {
+    return {
+      
+    }
+  },
+
+  methods: {
+    
+  }
+}
+</script>
+
+<style scoped>
+body {
+  background: #868e96;
+  font-family: 'Roboto', sans-serif;
+  color: #343a40;
+}
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 340px;
+  height: 520px;
+  display: grid;
+  grid-template-rows: 110px repeat(5, 1fr);
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas:
+    'display display display display'
+    'btn-ac btn-neg btn-perc op-div'
+    'num-7 num-8 num-9 op-mult'
+    'num-4 num-5 num-6 op-min'
+    'num-1 num-2 num-3 op-plus'
+    'num-0 num-0 num-dot op-eql';
+  box-shadow: 1px 1px 4px #343a40;
+}
+
+.display {
+  margin: 0;
+  padding: 20px;
+  background: #f8f9fa;
+  font-size: 4em;
+  grid-area: display;
+  line-height: 1.6;
+  text-align: right;
+}
+
+button {
+  border-width: 0;
+  font-size: 2em;
+  background: #e9ecef;
+}
+
+.op {
+  background: #ced4da;
+  color: #868e96;
+}
+
+.op-main {
+  font-size: 2.5em;
+  color: #343a40;
+}
+
+.op-ac {
+  grid-area: btn-ac;
+  background: #e03131;
+  color: #f8f9fa;
+}
+
+.op-neg {
+  grid-area: btn-neg;
+}
+
+.op-percent {
+  grid-area: btn-perc;
+}
+
+.op-divide {
+  grid-area: op-div;
+}
+
+.op-multi {
+  grid-area: op-mult;
+}
+
+.op-min {
+  grid-area: minus;
+}
+
+.num-7 {
+  grid-area: num-7;
+}
+
+.num-8 {
+  grid-area: num-8;
+}
+
+.num-9 {
+  grid-area: num-9;
+}
+
+.num-4 {
+  grid-area: num-4;
+}
+
+.num-5 {
+  grid-area: num-5;
+}
+
+.num-6 {
+  grid-area: num-6;
+}
+
+.op-min {
+  grid-area: op-min;
+}
+
+.num-1 {
+  grid-area: num-1;
+}
+
+.num-2 {
+  grid-area: num-2;
+}
+
+.num-3 {
+  grid-area: num-3;
+}
+
+.op-plus {
+  grid-area: op-plus;
+}
+
+.num-0 {
+  grid-area: num-0;
+}
+
+.num-dot {
+  grid-area: num-dot;
+}
+
+.op-eql {
+  grid-area: op-eql;
+}
+
+</style>
+
