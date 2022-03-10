@@ -1,8 +1,9 @@
 <template>
   <div id="app">
-   
-    <h1>Calculator</h1>
-    <!--  <img alt="Vue logo" src="./assets/logo.png"> -->
+    <div class="top">
+     <h1>Calculator with</h1>
+     <img alt="Vue logo" src="./assets/logo.png" height="80px"> 
+    </div>
     <Calculator/>
   </div>
 </template>
@@ -18,6 +19,16 @@ export default {
 </script>
 
 <style lang="scss">
+.top {
+  font-weight: bold;
+  color: #f7f7f7;
+  display: flex;
+  justify-content: center;
+
+  h1 {
+   font-size: 40px;
+  }
+}
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -26,6 +37,7 @@ export default {
   margin-top: 60px;
 }
 body{
-  background-color:#2c3e50;
+  background-color: #35495e;
 }
+
 </style>
